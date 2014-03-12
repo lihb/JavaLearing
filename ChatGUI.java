@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 /**
  *这是小型的聊天程序，主要的知识点为 java awt编程，udp协议，多线程等。
+ * udp需要两个客户端，发送端和接收短都需要安装在双方机子上。
  */
 class Send implements Runnable{
 
