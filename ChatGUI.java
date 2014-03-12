@@ -2,7 +2,9 @@ import java.net.*;
 import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
-
+/**
+ *这是小型的聊天程序，主要的知识点为 java awt编程，udp协议，多线程等。
+ */
 class Send implements Runnable{
 
 	private	DatagramSocket ds;
