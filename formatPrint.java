@@ -35,6 +35,9 @@ public class formatPrint{
 		System.out.printf("%tT\n",new Date());
 		System.out.printf("%1$s %2$tB %2$te ,%2$tY \n","Due date:",new Date());  
 
+
+
+
 	} 
 }
 
