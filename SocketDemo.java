@@ -7,6 +7,7 @@
  *      那是否都一定要调用flush()方法呢，答案是：不一定。只要你能保证你写的所有数据都能大于8KB。
  *      如不能保证，请调用flush()方法。
  *总结：谨慎起见，还是调用flush()方法为妙，另close()方法也会调用flush()方法。
+ *详情参见：http://blog.csdn.net/veryitman/article/details/6460726    
  */
 
 import java.util.*;
