@@ -35,7 +35,7 @@ class SocketClient{
 			System.out.println("Client:::::"+line);
 			bufw.write(line);
 			bufw.newLine();
-			bufw.flush();
+			bufw.flush(); //attention
 			//out.println(line);
 			String info = bufIn.readLine();
 			System.out.println("Server:::"+info);
@@ -74,7 +74,7 @@ class Server{
 			System.out.println(line);
 			bufw.write(line.toUpperCase());
 			bufw.newLine();
-			bufw.flush();
+			bufw.flush();//attention
 			//out.println(line.toUpperCase());
 			line=bufIn.readLine();
 		}
