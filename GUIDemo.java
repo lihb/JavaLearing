@@ -2,6 +2,11 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 
+/**
+ *程序主要演示windows系统资源管理器，在地址栏输入一个路径，
+ *将其跳转到相应的路径，并将该路径下的所有文件夹及文件显示
+ *出来。
+ */
 public class GUIDemo{
 
 	private TextField tf;
