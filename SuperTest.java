@@ -20,7 +20,7 @@ class Ball{
 class FootBall extends Ball{
     
     public FootBall(){
-        //super(20);
+        super(20); //当父类有构造方法时，默认构造方法消失，子类必须显示调用父类的构造方法
         System.out.println("radius:"+ 20);  
     }
 
