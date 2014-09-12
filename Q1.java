@@ -1,6 +1,6 @@
 public class Q1 implements Runnable 
 { 
-public void run(String s) 
+public void run(String s)   //没有实现run() 方法
 { 
 System.out.println("Before start Thread :"+s); 
 

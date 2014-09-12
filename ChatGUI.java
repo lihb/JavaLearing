@@ -29,8 +29,8 @@ class Send implements Runnable{
 			if(data!=null){
 			
 				//byte[] buf = data.getBytes();
-				byte[] buf = data.getBytes();
-				DatagramPacket dp = new DatagramPacket(buf,buf.length,InetAddress.getByName("192.168.0.102"),10000);
+				byte[] buf = data.getBytes("utf-8");
+				DatagramPacket dp = new DatagramPacket(buf,buf.length,InetAddress.getByName("10.10.32.213"),10000);
 				ds.send(dp);
 			}
 		}catch(Exception e){}
@@ -60,7 +60,7 @@ class Receive implements Runnable{
 				ds.receive(dp);
 				String ip = dp.getAddress().getHostAddress();
 
-				String data = new String(dp.getData(),0,dp.getLength());
+				String data = new String(dp.getData(),0,dp.getLength(), "UTF-8");
 				result = ip+"::::说:"+data;
 				ta.append(result+"\r\n");
 				System.out.println(result);
@@ -128,7 +128,12 @@ public class ChatGUI{
 		btn_send.addActionListener(new ActionListener(){
 			
 			public void actionPerformed(ActionEvent e){
-				String data = ta_send.getText();
+                String data="";
+                //try{
+				     data = ta_send.getText();
+                //}catch(UnsupportedEncodingException ex){
+                //    throw new RuntimeException();
+               // }
 				send.setData(data);
 				new Thread(send).start();
 				ta_receive.append("\r\n我说:"+data+"\r\n");
