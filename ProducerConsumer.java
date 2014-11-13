@@ -82,10 +82,19 @@ public class ProducerConsumer{
 		Conusumer conusumer = new Conusumer(res);
 		
 		Thread t1 = new Thread(producer);
-		Thread t2 = new Thread(conusumer);
+		Thread t2 = new Thread(producer);
+		Thread t3 = new Thread(producer);
+		Thread t4 = new Thread(conusumer);
+		Thread t5 = new Thread(conusumer);
+		Thread t6 = new Thread(conusumer);
+		Thread t7 = new Thread(conusumer);
+		Thread t8 = new Thread(conusumer);
+		Thread t9 = new Thread(conusumer);
 
 		t1.start();
 		t2.start();
+        t4.start();
+        t5.start();
 
 
 	}

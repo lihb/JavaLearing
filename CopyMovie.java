@@ -20,7 +20,7 @@ public class CopyMovie{
 
 	public static void copy()throws IOException{
 
-		File file = new File("F:\\Moive\\Click.mkv");
+		File file = new File("F:\\test.doc");
 		
 		System.out.println("文件大小："+file.length()/1024/1024+"MB"); 
 		System.out.println(file);
@@ -28,7 +28,7 @@ public class CopyMovie{
 			new BufferedInputStream(new FileInputStream(file));
 
 		BufferedOutputStream bufOut = 
-			new BufferedOutputStream(new FileOutputStream("d:\\Click.mkv"));
+			new BufferedOutputStream(new FileOutputStream("d:\\Click.doc"));
 		
 		int len = 0 ;
 		
