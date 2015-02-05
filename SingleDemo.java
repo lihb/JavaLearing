@@ -17,8 +17,8 @@ class Single{
 			synchronized(Single.class){
 				if(s == null)
 					s = new Single();
-				return s;
 			}
+		return s;
 	}
 	*/
 //两者区别在于谁先创建对象。先创建的对象的方式属于比较饥饿，俗称“饿汉”。	

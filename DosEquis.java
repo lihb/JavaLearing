@@ -8,7 +8,7 @@ public class DosEquis{
 	public static void main(String[] args){
 		char x = 'x';
 		int i = 0;
-		System.out.print(true ? x : i); 
+		System.out.println(true ? x : i); 
 		System.out.println(false ? i : x); 
 
 
@@ -24,7 +24,7 @@ public class DosEquis{
 
 		int y = 'H' + 'a';
 		System.out.println(y);  
-
+        System.out.println(dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd);  
 	}
 	
 }
