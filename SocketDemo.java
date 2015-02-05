@@ -18,7 +18,7 @@ import java.io.*;
 class SocketClient{
 	public static void main(String[] args)throws Exception{
 	
-		Socket s = new Socket("192.168.0.103",10000);
+		Socket s = new Socket("127.0.0.1",10000);
 		
 		BufferedReader bufr = new BufferedReader(new InputStreamReader(System.in));
 
@@ -58,7 +58,7 @@ class Server{
 		Socket s = ss.accept();
 
 		String ip = s.getInetAddress().getHostAddress();
-		System.out.println(ip+".... connected!");
+		System.out.println(ip + " and " +s.hashCode()+".... connected!");
 		//获得socket输入流
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
 

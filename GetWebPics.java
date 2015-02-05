@@ -21,7 +21,7 @@ public class GetWebPics{
 
 	public static void getPicURLs()throws Exception{
 		
-		URL url = new URL("http://photo.hupu.com/nba/p22527-6.html");   //url链接
+		URL url = new URL("http://qing.blog.sina.com.cn/tj/a7a0b05332004c07.html");   //url链接
 		URLConnection conn = url.openConnection(); //打开url链接，得到一个URLConnection
 		
 		InputStream in = conn.getInputStream();  //通过conn，读取网站内容，返回InputStream
